@@ -1,0 +1,3 @@
+QUESTIONS
+
+- Faut-il créer un fichier robots.txt et mettre une balise robots ?

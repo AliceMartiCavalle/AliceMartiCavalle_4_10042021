@@ -7,6 +7,22 @@ body {
     /* -moz-osx-font-smoothing: grayscale; */ /**pas standard*/
 }
 
+/*TEXTURES*/
+#bloc-4-portfolio {
+    background: url("img/wallpaper_lines.png");
+    border: 5px solid green;
+}
+#bloc-6 {
+    background : url("img/wallpaper_paper_20.png"), url("img/wallpaper_dots_50.png");
+    background-color: #F79463;
+}
+#bloc-1-hero, #bloc-5-cta {
+    background: url("img/wallpaper_paper_20.png"), url("img/la-chouette-agence-banniere.jpg");
+}
+#bloc-3-what-i-do {
+    background: url("img/wallpaper_paper_20.png"), url("img/image-de-presentation.jpg");
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
