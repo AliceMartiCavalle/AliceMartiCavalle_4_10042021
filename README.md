@@ -9,7 +9,6 @@ QUESTIONS
 
 Est-ce qu'il faut faire un fichier robot.txt ?
 
-J'ai remplacé le dallage de .png par un seul wallpaper... supprimer complètement ? [3]
 
 Est-ce que c'est mieux de lier font-awesome ou c'est bon aussi de télécharger et linker comme une stylesheet ?
 Même question pour bootstrap
