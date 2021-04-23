@@ -1,7 +1,7 @@
 Projet 4
 
 /!\
-NB : pour accéder au rapport en cours, cliquer sur "voir le rapport en ligne
+NB : pour accéder au rapport en cours, cliquer sur "voir le rapport en ligne"
 /!\
 
 
