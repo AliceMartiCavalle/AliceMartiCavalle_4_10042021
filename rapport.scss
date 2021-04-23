@@ -1,0 +1,110 @@
+$color : (
+    bleu : rgb(0, 174, 255),
+    blanc : white,
+    noir : black
+);
+body {
+    background-image: url("../img/foggy-birds.png");
+}
+.wrapper {
+    background-color: transparentize(map-get($color, blanc), .4);
+    border: 5px solid map-get($color, bleu);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 550px;
+    margin: 40px auto 0 auto;
+}
+h1 {
+    // border: 1px solid #000;
+    justify-self: center;
+    margin: 0 auto 20px auto;
+}
+h2 {
+    padding: 3px 10px 3px 5px;
+    border-bottom: 3px solid map-get($color, bleu);
+    border-left: 3px solid map-get($color, bleu);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+ul {
+    // border: 1px solid #000;
+    margin: 0;
+    list-style: disc;
+    list-style: disclosure-closed;
+    list-style: thai;
+
+    max-width: 500px;
+    > li {
+        // position: relative;
+        margin: 5px;
+        > a {
+            color : map-get($color, noir);
+            text-decoration: none;
+            font-style: italic;
+            &:hover {
+                color : darken(map-get($color, bleu), 15%);
+                > svg {
+                    color : map-get($color, bleu);
+                    transform: scale(1.3) translateX(3px) translateY(-3px);
+                }
+            }
+        }
+        > a svg, svg {
+            width : 10px;
+            color : darken(map-get($color, bleu), 15%);
+            transition: 300ms;
+        }
+        &:hover > svg {
+            color : map-get($color, bleu);
+            transform: scale(1.5) rotate(-43deg);
+        }
+        &:hover > span {
+            text-decoration: underline 2px map-get($color, bleu);
+        }
+        &:nth-child(4):hover, &:nth-child(6):hover, &:nth-child(8):hover {
+            cursor : pointer;
+        }
+        &:nth-child(4):focus + div {
+            display: block;
+        } 
+        &:nth-child(6):focus + div {
+            display: block;
+        } 
+        &:nth-child(8):focus + div {
+            display: block;
+        } 
+    }
+    > div:nth-child(5) {
+        // z-index: 1;
+        transform: translateX(-90px);
+        display: none;
+        > img {
+            width: 150%;
+        }
+    }
+    > div:nth-child(7) {
+        // z-index: 1;
+        transform: translateX(-90px);
+        display: none;
+        > img {
+            width: 100%;
+        }
+    }
+    > div:nth-child(9) {
+        // z-index: 1;
+        transform: translateX(-90px);
+        display: none;
+        > img {
+            width: 150%;
+        }
+    }
+}
+p {
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: underline dotted 2px darken(map-get($color, bleu), 10%);
+}

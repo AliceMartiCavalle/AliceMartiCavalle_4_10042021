@@ -6,9 +6,12 @@
 .wrapper {
     /* justify-content: center; */
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
+}
+#tel {
+    display: none;
 }
 .img {
     display: flex;
@@ -39,14 +42,64 @@ figcaption {
     position: absolute;
     transform: translate(3px, 250%) rotate(-45deg);
 }
+
+.rapport {
+    /* border: 1px solid #000; */
+    margin: 20px 0 30px 0;
+    display: flex;
+}
+.rapport a {
+    margin: 10px 10px 0 10px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.rapport a:hover {
+    background:-webkit-linear-gradient(right, red 10%, orange 90%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+.rapport a svg {
+    font-weight: normal;
+    width : 25px;
+    margin: 0 10px;
+    position: relative;
+}
+.rapport a:hover > svg {
+    color : orangered
+}
+.rapport a:first-child svg {
+    top : 8px;
+}
+.rapport a:nth-child(2) svg {
+    top : 4px;
+}
+.rapport a:nth-child(3) svg {
+    top : 9px;
+}
 @media screen and (max-width : 767px) {
-    h1 {
-        font-size: 1.2em;
+    #ordi {
+        display: none;
     }
-    h2 {
-        font-size: 1em;
+    #tel {
+        display: block;
+    }
+    h1, h2 {
+        /* font-size: 1.3em; */
+        text-align: center;
     }
     .img {
         flex-direction: column;
+    }
+    .rapport {
+        display: flex;
+        flex-direction: column;
+    }
+    .rapport a:nth-child(3) {
+        position: relative;
+        top: -8px;
     }
 }

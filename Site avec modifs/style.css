@@ -908,8 +908,8 @@ h3 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /* padding-left: constant(safe-area-inset-left); */
+        /* padding-right: constant(safe-area-inset-right); */
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -919,8 +919,8 @@ h3 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /* padding-left: constant(safe-area-inset-left); */
+        /* padding-right: constant(safe-area-inset-right); */
     }
 }
 
@@ -1061,7 +1061,7 @@ h3 {
         width: 180px;
         height: 320px;
     }
-    .img-responsive { /**ajout de moi*/
+    .img-responsive { /**ajout de moi**/
         max-width: 320px;
         margin: 0 auto;
     }
@@ -1071,6 +1071,10 @@ h3 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .img-responsive { /**ajout de moi**/
+        max-width: 280px;
+        margin: 0 auto;
     }
 }
 
