@@ -1,8 +1,9 @@
 $color : (
     bleu : rgb(0, 174, 255),
     blanc : white,
-    noir : black
+    noir : black,
 );
+
 body {
     background-image: url("../img/foggy-birds.png");
 }
@@ -20,7 +21,7 @@ body {
 h1 {
     // border: 1px solid #000;
     justify-self: center;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
 }
 h2 {
     padding: 3px 10px 3px 5px;
@@ -52,6 +53,13 @@ ul {
                     transform: scale(1.3) translateX(3px) translateY(-3px);
                 }
             }
+            > span {
+                color: darken(map-get($color, bleu), 20%);
+                &:hover {
+                    color : map-get($color, bleu);
+                    
+                }
+            }
         }
         > a svg, svg {
             width : 10px;
@@ -65,46 +73,59 @@ ul {
         &:hover > span {
             text-decoration: underline 2px map-get($color, bleu);
         }
-        &:nth-child(4):hover, &:nth-child(6):hover, &:nth-child(8):hover {
-            cursor : pointer;
+        &:hover > a .etoile {
+            color: map-get($color, bleu);
         }
-        &:nth-child(4):focus + div {
-            display: block;
-        } 
-        &:nth-child(6):focus + div {
-            display: block;
-        } 
-        &:nth-child(8):focus + div {
-            display: block;
-        } 
-    }
-    > div:nth-child(5) {
-        // z-index: 1;
-        transform: translateX(-90px);
-        display: none;
-        > img {
-            width: 150%;
+        span {
+            text-decoration: underline 1px darken(map-get($color, bleu), 20%);
         }
-    }
-    > div:nth-child(7) {
-        // z-index: 1;
-        transform: translateX(-90px);
-        display: none;
-        > img {
-            width: 100%;
-        }
-    }
-    > div:nth-child(9) {
-        // z-index: 1;
-        transform: translateX(-90px);
-        display: none;
-        > img {
-            width: 150%;
+    }   
+}
+.etoile {
+    text-decoration: none;
+    // border: 1px solid rgb(109, 71, 71);
+
+}
+.hidden {
+    transform: translateX(-20px);
+    display: none;
+    > img {
+        width: 110%;
+        transition: 500ms;
+        &:hover {
+            transform: scale(1.6);
         }
     }
 }
-p {
-    margin: 10px;
+.clicker {
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus + .hidden {
+    display: block;
+    }
+}
+h3 {
+    margin: 10px 13px;
+    padding: 0;
     font-weight: bold;
+    font-size: 1.2em;
     text-decoration: underline dotted 2px darken(map-get($color, bleu), 10%);
 }
+.notes {
+    margin-top: 30px;
+    font-size: .9em;
+    font-style: italic;
+    > p {
+        padding: 0;
+        margin: 0;
+    }
+    > svg {
+        color : darken(map-get($color, bleu), 20%);
+        width : 15px;
+    }
+}
+.right {
+    align-self: flex-end;
+}
+

@@ -1,0 +1,5 @@
+# fichier pour les robots du site https://alicemarticavalle.github.io/
+User-Agent: *
+Disallow: ./includes/form_1.php
+Allow: /*.css?* 
+Sitemap: https://alicemarticavalle.github.io/sitemap.xml

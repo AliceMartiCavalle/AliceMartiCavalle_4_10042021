@@ -1,19 +1,15 @@
 Projet 4
 
-/!\
-NB : pour accéder au rapport en cours, cliquer sur "voir le rapport en ligne"
-/!\
-
 
 QUESTIONS
 
-Est-ce qu'il faut faire un fichier robot.txt ?
+J'ai pas trouvé comment importer que partiellement bootstrap avec sass
 
+Je n'arrive pas à trouver un outil qui compress mon css sans produire des erreurs
 
-Est-ce que c'est mieux de lier font-awesome ou c'est bon aussi de télécharger et linker comme une stylesheet ?
-Même question pour bootstrap
+Est-ce qu'il faut faire un fichier robot.txt ? OUI
 
-balise canonical ?
+balise canonical ? NON
 
 
 
@@ -24,7 +20,7 @@ A FAIRE
 
     <!-- ! mettre le site sur github page -->
 <!-- - Passer le site au validateur html/css -->
-- verif champs du form : regex + feedback css
+<!-- - verif champs du form : regex + feedback css -->
 - contrasts
 - accessibilité au clavier
 - réduire taille img sur version tel ?
@@ -32,7 +28,7 @@ A FAIRE
 - media queries : min-device-width & max-device-width
 
 - Search console
-- redirection avec/sans www : balise <canonical>
+<!-- - redirection avec/sans www : balise <canonical> -->
 - checker vitesse avec lighthouse/page speed
 - checker SEO avec https://sitechecker.pro/fr/ ?
 

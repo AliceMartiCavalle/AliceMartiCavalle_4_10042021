@@ -8,7 +8,7 @@ body {
 }
 
 /*TEXTURES*/
-#bloc-4-portfolio {
+/* #bloc-4-portfolio {
     background: url("img/wallpaper_lines.png");
     border: 5px solid green;
 }
@@ -17,11 +17,11 @@ body {
     background-color: #F79463;
 }
 #bloc-1-hero, #bloc-5-cta {
-    background: url("img/wallpaper_paper_20.png"), url("img/la-chouette-agence-banniere.jpg");
+    background: url("img/wallpaper_paper_20.png"), url("img/la-chouette-agence-banniere.webp");
 }
 #bloc-3-what-i-do {
-    background: url("img/wallpaper_paper_20.png"), url("img/image-de-presentation.jpg");
-}
+    background: url("img/wallpaper_paper_20.png"), url("img/image-de-presentation.webp");
+} */
 
 a,
 button {
@@ -44,7 +44,6 @@ a:hover {
 }
 
 .bloc {
-                                border: 1px solid red;
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
@@ -57,7 +56,6 @@ a:hover {
 }
 
 .bloc .container {
-                                            border: 1px solid blue;
     padding-left: 0;
     padding-right: 0;
 }
@@ -131,7 +129,6 @@ a:hover {
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
     border-color: rgba(255, 255, 255, .9);
-    /* border: 1px solid #000; */
 }
 
 .d-bloc .divider-h span {
@@ -152,8 +149,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6); /*! changer couleur ?*/
-    /* border: 1px solid #000; */
+    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc .a-btn:hover,
@@ -170,9 +166,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    /*! changer couleur ?*/
     color: rgba(255, 255, 255, 1); 
-    /* border: 1px solid #000; */
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -186,7 +180,6 @@ a:hover {
 }
 
 .d-bloc .panel {
-    border: 1px solid #000;
     color: rgba(0, 0, 0, .5);
 }
 
@@ -316,7 +309,6 @@ a:hover {
 }
 
 .navbar-brand {
-    /* border: 1px solid #000; */
     height: auto;
     padding: 3px 15px;
     font-size: 25px;
@@ -347,7 +339,6 @@ a:hover {
 }
 
 .nav > li {
-    /* border: 1px solid #000; */
     float: left;
     margin-top: 4px;
     font-size: 16px;
@@ -501,14 +492,10 @@ button {
 }
 
 .icon-md {
-    /* border: 1px solid #000; */
-
     font-size: 30px!important;
 }
 
 .icon-lg {
-    /* border: 1px solid red!important; */
-
     font-size: 60px!important;
 }
 
@@ -555,7 +542,6 @@ button {
 }
 
 .showScrollTop {
-    /* border: 1px solid #000; */
     font-size: 14px;
     opacity: 1;
 }
@@ -635,12 +621,11 @@ a[data-lightbox]:hover img {
 .next-lightbox:hover,
 .prev-lightbox:hover {
     opacity: 1.0;
-    color: #FFF; /*!transition trop longue*/
+    color: #FFF;
 }
 
 .next-lightbox,
 .prev-lightbox {
-    /* border: 1px solid #000; */
     font-size: 20px;
     color: black; /*! pouquoi pas noir, pb d'opacity quelque part*/
     background: rgba(0, 0, 0, .1);
@@ -725,7 +710,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important; /*! changer couleur pour meilleur contraste*/
+    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px;
     font-size: 16px;
@@ -733,7 +718,6 @@ p {
 }
 
 .social {
-    /* border: 1px solid #000; */
     max-width: 400px;
     margin: auto;
 }
@@ -807,9 +791,6 @@ h3 {
     color: #F3976C!important;
 }
 
-/* .tc-dark { /** ajout de moi
-    color : black!important;
-} */
 
 .btn-atomic-tangerine {
     background: #F3976C;
@@ -818,7 +799,6 @@ h3 {
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    /* color: #FFFFFF!important; */
 }
 
 .ltc-white {
@@ -851,13 +831,13 @@ h3 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
     position: relative;
     /* opacity: 0.2; */
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -907,10 +887,7 @@ h3 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        /* padding-left: constant(safe-area-inset-left); */
-        /* padding-right: constant(safe-area-inset-right); */
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -919,8 +896,6 @@ h3 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        /* padding-left: constant(safe-area-inset-left); */
-        /* padding-right: constant(safe-area-inset-right); */
     }
 }
 
