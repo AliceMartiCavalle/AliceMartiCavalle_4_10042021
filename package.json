@@ -13,6 +13,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.8"
+  },
   "bugs": {
     "url": "https://github.com/AliceMartiCavalle/AliceMartiCavalle_4_10042021/issues"
   },

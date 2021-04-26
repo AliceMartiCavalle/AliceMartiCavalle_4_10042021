@@ -97,12 +97,17 @@ ul {
         }
     }
 }
+.tel {
+
+}
 .clicker {
     &:hover {
         cursor: pointer;
     }
     &:focus + .hidden {
     display: block;
+    @media screen and (max-width: 500px) {
+        color: red;
     }
 }
 h3 {
