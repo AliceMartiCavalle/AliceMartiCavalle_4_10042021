@@ -1,0 +1,148 @@
+body {
+  background-image: url("../img/foggy-birds.png"); }
+
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 5px solid #00aeff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 550px;
+  margin: 40px auto 0 auto; }
+  @media screen and (max-width: 425px) {
+    .wrapper {
+      padding: 15px; } }
+
+h1 {
+  justify-self: center;
+  margin: 0 auto; }
+  @media screen and (max-width: 425px) {
+    h1 {
+      font-size: 1.1em;
+      margin: 5px auto 15px auto; } }
+
+h2 {
+  padding: 3px 10px 3px 5px;
+  border-bottom: 3px solid #00aeff;
+  border-left: 3px solid #00aeff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px; }
+  @media screen and (max-width: 425px) {
+    h2 {
+      font-size: 1.1em; } }
+
+h3 {
+  margin: 10px 13px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline dotted 2px #008bcc; }
+  @media screen and (max-width: 425px) {
+    h3 {
+      font-size: 1em; } }
+
+ul {
+  margin: 0;
+  list-style: disc;
+  list-style: disclosure-closed;
+  list-style: thai;
+  max-width: 500px; }
+  @media screen and (max-width: 425px) {
+    ul {
+      padding: 10px; } }
+  ul > li {
+    margin: 5px; }
+    ul > li > ul li a {
+      color: black;
+      text-decoration: none;
+      font-style: italic; }
+      ul > li > ul li a:hover {
+        color: #007ab3; }
+        ul > li > ul li a:hover > svg {
+          color: #00aeff;
+          transform: scale(1.3) translateX(3px) translateY(-3px); }
+    ul > li > a {
+      color: black;
+      text-decoration: none;
+      font-style: italic; }
+      ul > li > a:hover {
+        color: #007ab3; }
+        ul > li > a:hover > svg {
+          color: #00aeff;
+          transform: scale(1.3) translateX(3px) translateY(-3px); }
+      ul > li > a > span {
+        color: #006899; }
+        ul > li > a > span:hover {
+          color: #00aeff; }
+    ul > li > a svg, ul > li svg {
+      width: 10px;
+      color: #007ab3;
+      transition: 300ms; }
+    ul > li:hover > svg {
+      color: #00aeff;
+      transform: scale(1.5) rotate(-43deg); }
+    ul > li:hover > span {
+      text-decoration: underline 2px #00aeff; }
+    ul > li:hover > a .etoile {
+      color: #00aeff; }
+    ul > li span {
+      text-decoration: underline 1px #006899; }
+
+.etoile {
+  text-decoration: none; }
+
+.hidden {
+  transform: translateX(-20px);
+  display: none; }
+  @media screen and (max-width: 425px) {
+    .hidden > .ordi {
+      display: none; } }
+  .hidden > .ordi > img {
+    width: 110%;
+    transition: 500ms; }
+    .hidden > .ordi > img:hover {
+      transform: scale(1.6); }
+  @media screen and (min-width: 426px) {
+    .hidden > .tel {
+      display: none; } }
+  .hidden > .tel a {
+    color: black;
+    text-decoration: none;
+    font-size: italic; }
+    .hidden > .tel a:hover {
+      color: #007ab3;
+      text-decoration: underline 1px #00aeff; }
+      .hidden > .tel a:hover > svg {
+        color: #00aeff;
+        transform: scale(1.5) rotate(-43deg); }
+  .hidden > .tel svg {
+    color: black;
+    width: 10px; }
+
+.clicker:hover {
+  cursor: pointer; }
+.clicker:focus + .hidden {
+  display: block; }
+
+.notes {
+  margin-top: 30px;
+  font-size: .9em;
+  font-style: italic; }
+  .notes > p {
+    padding: 0;
+    margin: 0; }
+  .notes > svg {
+    color: #006899;
+    width: 15px; }
+
+.right {
+  align-self: flex-end; }
+  @media screen and (max-width: 425px) {
+    .right {
+      align-self: center;
+      margin: 0 -30px; } }
+
+/*# sourceMappingURL=rapport.css.map */
